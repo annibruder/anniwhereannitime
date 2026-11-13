@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="StudySpace: course-based summaries, flashcards, vocabulary and practice.">
+<title>StudySpace · Your revision desk</title>
+<link rel="stylesheet" href="style.css"><script src="script.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="app">
+<aside class="sidebar">
+<a href="#home" class="logo">✦ <span>StudySpace<small>MAKE IT MAKE SENSE.</small></span></a>
+<p class="nav-label">YOUR WORKSPACE</p>
+<nav aria-label="Workspace"><a href="#home" data-view="home">▦ &nbsp; Overview</a><a href="#planner" data-view="planner">▤ &nbsp; Study planner</a><a href="#glossary" data-view="glossary">Aa &nbsp; Word bank</a></nav>
+<p class="nav-label">YOUR SEVEN CLASSES</p><nav id="classNav" aria-label="Classes"></nav>
+<div class="sidebar-bottom"><span class="status-dot"></span> No account needed<p>Study content for everyone.<br>Your progress stays on this browser.</p></div>
+</aside>
+<main id="main" class="main" tabindex="-1">
+<header class="topbar"><div><p class="eyebrow">YOUR REVISION DESK</p><h1 id="pageTitle">A little progress, every day.</h1></div><span class="avatar" aria-hidden="true">✦</span></header>
+<div id="notice" role="status" class="notice hidden"></div>
+<section id="homeView">
+<div class="welcome"><div><span class="pill">MICROECONOMICS IS READY</span><h2>From lecture slides<br>to “I get it.”</h2><p>Understand the idea. Test your memory. Work through the numbers.</p><a class="primary-btn" href="#course/micro">Start revising <span aria-hidden="true">↗</span></a></div><div class="welcome-art" aria-hidden="true"><span>Y = f(M, N, E)</span><strong>✦</strong><span>ONE TOPIC AT A TIME</span></div></div>
+<div class="stats" id="stats"></div>
+<div class="section-heading"><div><p class="eyebrow">A PLACE FOR EVERY SUBJECT</p><h2>Your classes</h2></div><span class="muted">Exactly seven. All in one place.</span></div><div id="classGrid" class="class-grid"></div>
+</section>
+<section id="courseView" class="hidden"><div id="courseHeader"></div><div id="moduleGrid" class="module-grid"></div></section>
+<section id="topicView" class="hidden"><a href="#course/micro" class="back-link">← All Microeconomics topics</a><div id="topicHeader"></div><div id="topicTabs" class="tabs" role="tablist" aria-label="Study mode"></div><div id="topicPanel" role="tabpanel"></div></section>
+<section id="glossaryView" class="hidden"><p class="lede">The vocabulary behind the ideas. Definitions are based on your Microeconomics lectures.</p><label class="search-label">Find a term<input type="search" id="termSearch" placeholder="Try opportunity cost, MRS, Nash…"></label><p id="termCount" class="muted" role="status"></p><div id="glossaryList" class="glossary-grid"></div></section>
+<section id="plannerView" class="hidden"><p class="lede">Give your next study session a place in the week.</p><form id="taskForm" class="panel planner-form"><label>What will you study?<input id="taskName" required maxlength="200" placeholder="Practise MRS calculations"></label><label>Class<select id="taskClass"></select></label><label>Study date<input id="taskDate" type="date" required></label><button class="primary-btn">Add task</button></form><p id="taskSummary" class="muted" role="status"></p><div id="taskList" class="stack"></div></section>
+<footer><span>StudySpace ✦ Learn it your way.</span><span>Course-based revision · No official exam questions</span></footer>
+</main>
+</div>
+<noscript><p class="notice">Enable JavaScript to use the study content and revision tools.</p></noscript>
+</body></html>
